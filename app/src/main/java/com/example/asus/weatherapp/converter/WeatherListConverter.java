@@ -1,7 +1,8 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.converter;
 
 import android.arch.persistence.room.TypeConverter;
 
+import com.example.asus.weatherapp.domain.WeatherList;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

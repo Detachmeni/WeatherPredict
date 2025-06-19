@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.asus.weatherapp.base.WeatherFragment;
+
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;

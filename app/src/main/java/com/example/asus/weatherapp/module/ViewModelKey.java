@@ -1,4 +1,4 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.module;
 
 import android.arch.lifecycle.ViewModel;
 

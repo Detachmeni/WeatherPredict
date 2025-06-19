@@ -1,8 +1,7 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.viewmodel;
 
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
-import android.support.annotation.NonNull;
 
 import java.util.Map;
 

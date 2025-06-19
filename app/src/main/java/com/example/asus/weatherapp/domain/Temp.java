@@ -1,9 +1,9 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.domain;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-class Temp {
+public class Temp {
 
     //"day":262.65,"min":261.41,"max":262.65,"night":261.41,"eve":262.65,"morn":262.65
 

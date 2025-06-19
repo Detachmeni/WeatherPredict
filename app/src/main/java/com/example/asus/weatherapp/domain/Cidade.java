@@ -1,6 +1,4 @@
-package com.example.asus.weatherapp;
-
-import android.arch.persistence.room.Embedded;
+package com.example.asus.weatherapp.domain;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

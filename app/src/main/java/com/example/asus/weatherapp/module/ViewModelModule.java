@@ -1,7 +1,10 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.module;
 
 import android.arch.lifecycle.ViewModel;
 import android.arch.lifecycle.ViewModelProvider;
+
+import com.example.asus.weatherapp.viewmodel.FactoryViewModel;
+import com.example.asus.weatherapp.viewmodel.WeatherViewModel;
 
 import dagger.Binds;
 import dagger.Module;

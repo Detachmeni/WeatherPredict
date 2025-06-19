@@ -1,4 +1,4 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.domain;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

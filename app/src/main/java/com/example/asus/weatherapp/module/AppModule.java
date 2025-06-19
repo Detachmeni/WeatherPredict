@@ -1,13 +1,15 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.module;
 
 import android.app.Application;
 import android.arch.persistence.room.Room;
-import android.util.Log;
 
+import com.example.asus.weatherapp.db.Database;
+import com.example.asus.weatherapp.db.WeatherDao;
+import com.example.asus.weatherapp.repository.WeatherRepository;
+import com.example.asus.weatherapp.http.WeatherWebService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.IOException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -16,6 +18,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module(includes = ViewModelModule.class)
@@ -59,6 +62,7 @@ public class AppModule {
     Retrofit provideRetrofit(Gson gson) {
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create(gson))
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .baseUrl(BASE_URL)
                 .build();
         return retrofit;

@@ -1,11 +1,10 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.base;
 
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +15,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.asus.weatherapp.R;
+import com.example.asus.weatherapp.converter.DateConverter;
+import com.example.asus.weatherapp.domain.Weather;
+import com.example.asus.weatherapp.domain.Tempo;
+import com.example.asus.weatherapp.viewmodel.WeatherViewModel;
 
 import org.joda.time.DateTime;
 
 import java.text.DateFormatSymbols;
-import java.util.Calendar;
 import java.util.Date;
 
 import javax.inject.Inject;
@@ -28,9 +31,6 @@ import javax.inject.Inject;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import dagger.android.support.AndroidSupportInjection;
-
-import static java.util.Calendar.DAY_OF_MONTH;
-import static java.util.Calendar.MONTH;
 
 public class WeatherFragment extends Fragment {
 

@@ -1,12 +1,11 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.domain;
 
 import android.arch.persistence.room.TypeConverters;
-import android.support.annotation.NonNull;
 
+import com.example.asus.weatherapp.converter.TempoConverter;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.Date;
 import java.util.List;
 
 public class WeatherList {

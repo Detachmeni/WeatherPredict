@@ -1,4 +1,4 @@
-package com.example.asus.weatherapp;
+package com.example.asus.weatherapp.converter;
 
 import android.arch.persistence.room.TypeConverter;
 
